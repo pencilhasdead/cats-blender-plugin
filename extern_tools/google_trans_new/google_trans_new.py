@@ -93,7 +93,7 @@ class google_translator:
             self.url_suffix = URL_SUFFIX_DEFAULT
         else:
             self.url_suffix = url_suffix
-        url_base = "https://translate.google.{}".format(self.url_suffix)
+        url_base = "https://translate.google.cn"
         self.url = url_base + "/_/TranslateWebserverUi/data/batchexecute"
         self.timeout = timeout
 
@@ -132,6 +132,7 @@ class google_translator:
             "Content-Type": "application/x-www-form-urlencoded;charset=utf-8"
         }
         freq = self._package_rpc(text, lang_src, lang_tgt)
+        print(self.url)
         response = requests.Request(method='POST',
                                     url=self.url,
                                     data=freq,
