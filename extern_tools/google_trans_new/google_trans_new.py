@@ -124,7 +124,7 @@ class google_translator:
         if len(text) == 0:
             return ""
         headers = {
-            "Referer": "http://translate.google.{}/".format(self.url_suffix),
+            "Referer": "http://translate.google.cn/",
             "User-Agent":
                 "Mozilla/5.0 (Windows NT 10.0; WOW64) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -214,7 +214,7 @@ class google_translator:
         if len(text) == 0:
             return ""
         headers = {
-            "Referer": "http://translate.google.{}/".format(self.url_suffix),
+            "Referer": "http://translate.google.cn/",
             "User-Agent":
                 "Mozilla/5.0 (Windows NT 10.0; WOW64) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
